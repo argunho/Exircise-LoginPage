@@ -266,7 +266,7 @@ input::placeholder {
 }
 
 .success-holder {
-    background-color: rgba(105, 212, 95, 0.459);
+    background-color: #87D071;
     text-align: center;
     border-style: solid;
     border-radius: 10px;
