@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aslan Khadizov | Login</title>
+    <!-- css -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="container">
+        <div class="wrapper" id="wrapper">
+
+            <!-- Div presentation before user logged in -->
+            <div class="presentation" id="presentation">
+                <p class="p-title" id="p_title">Uppgift: Inlogningsida</p>
+                <p class="p-student" id="p_student">Student: Aslan Khadizov</p>
+                <p class="p-seconds" id="p_seconds">3</p>
+                <p class="p-start" id="p_start" onclick="getStart()">Klicka här att logga in</p>
+            </div>
+
+            <!-- Welcome -->
+            <p class="login-welcome none" id="welcome">Välkommen</p>
+
+            <!-- Login form -->
+            <div class="login-holder none" id="login">
+
+                <!-- Form -->
+                <form name="loginForm">
+                    <div class="input-holder">
+                        <label for="name">Användarnamn</label>
+                        <input type="text" name="name" id="name" minlength="4" maxlength="20" placeholder="Ditt användarnamn här ..." required>
+                    </div>
+
+                    <div class="input-holder">
+                        <label for="password">Lösenord</label>
+                        <input type="password" name="password" minlength="4" maxlength="20" id="password" placeholder="Ditt lösenord här .." required>
+                    </div>
+                    <div class="input-holde button-holder">
+                        <button type="button" class="submit-btn" onclick="submitForm()">Logga in</button>
+                        <button type="button" class="submit-btn" onclick="closeForm()">Stänga</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Error content -->
+            <div class="error-holder none" id="error">
+                <p class="wrong">Något har gåt snett!</p>
+                <p class="error-msg">Användarnamn eller lösenord stämmer inte!</p>
+
+                <button type="button" onclick="tryAgain()">Jag vill försöka igen</button>
+                <button type="button" onclick='closeForm()'>Stänga</button>
+            </div>
+
+            <!-- Success content -->
+            <div class="success-holder none" id="success">
+                <p class="success" id="success_msg">Välkommen Test</p>
+                <p class="success-msg">Ta en kopp kaffe och börja ditt jobb!</p>
+                <div class="btn-holder">
+                    <button type="button" class="show-hide-btn" onclick="showHideText()" id="show_hide">
+                        Hur funkar koden?
+                    </button>
+                    <button type="button" class="show-hide-btn" onclick="window.location.reload()" id="show_hide">
+                            Ladda om sidan
+                    </button>
+                    <button type="button" class="logout-btn" onclick="logOut()">Logga ut</button>
+                </div>
+            </div>
+
+            <!-- Read me text -->
+            <div class="text-div none" id="doc">
+                <h3>Uppgift: Inlogningsida</h3>
+                <ol>
+                    <li>
+                        <span>Funktion setStart()</span> - Denna funktionen körs automatisk när sida öppnas och kontrollerar är besökare/användare inloggad eller inte. Om besökare/användare är inte inloggad visas en liten presentation och länk att starta
+                        annars öppnas fönster med hälsning till besökare/användare.
+                    </li>
+                    <li>
+                        <span>Funktion checkAuth() </span> - Returnerar true eller false, om besökare/användare är inloggad return blir true annars false, denna funktionen används i funktionen setStart()
+                    </li>
+                    <li>
+                        <span>Funktion getStart() </span> - Funktionen kopplad till länken "Klicka här att logga in" att öppna inlogningssida och form.
+                    </li>
+                    <li>
+                        <span>Funktion resetForm()</span> - Noll ställer login form när det öppnas
+                    </li>
+                    <li>
+                        <span>Funktion setBackground()</span> - Körs för att skifta bakgrund image beroende på parameters som fås in
+                    </li>
+                    <li>
+                        <span>Funktion submitForm()</span> - Tar emot data från login form och kontrollerar stämmer det eller inte med dem hårdskrivana variablerna. Om det success response sparas namn på localStorage annars skickas besökare/användare
+                        till error sidan
+                    </li>
+                    <li>
+                        <span>Funktion tryAgain()</span> - Vid eventuella när besökare/användare försöker logga in, kommer han till error sida och där får han möjlighet att försöka på nytt och denna funktionen återvänder besökare/användare till login
+                        form vid klick på knapp
+                    </li>
+                    <li>
+                        <span>Funktion closeForm()</span> - Stänger fönster med form och återställer html kod
+                    </li>
+                    <li>
+                        <span>Funktion logOut()</span> - Loggar ut besökare/användare, raderar besökare/användare namn från localStorage
+                    </li>
+                    <li>
+                        <span>Funktion hide()</span> - Hjälp att använda samma kod på flera ställe istället att skriva det på nytt
+                    </li>
+                    <li>
+                        <span>Funktion showHideText()</span> - Visar block med text block med förklaring hut funktionr fungerar, tillgängligt bar för inloggad användare.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
