@@ -82,8 +82,8 @@ function setBackground(param, val, skip = false) {
     }, sec01)
 }
 
-var name = "test";
-var pass = "1234";
+var name = "user";
+var pass = "password";
 
 // Submit function
 function submitForm() {
@@ -125,7 +125,7 @@ function closeForm() {
             wrapper.classList.remove("wrapper-bg");
             presentation.removeAttribute("style");
             success.classList.remove("success-changed");
-            document.getElementById("success_msg").innerHTML = "Välkommen Test";
+            document.getElementById("success_msg").innerHTML = "Välkommen User";
         }, 1500)
     }, 1200)
 
