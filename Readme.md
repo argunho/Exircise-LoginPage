@@ -3,7 +3,8 @@
 [Demo](https://argunho.github.io/Exircise-LoginPage/)
 
 ### Inloggningsuppgifter
-Login: user\n
+Login: user
+
 Password: password
 
 #### Testa med rätt och fel inloggningsupgifter
