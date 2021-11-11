@@ -26,7 +26,7 @@ function setStart() {
         presentation.style.display = "none";
         doc.classList.remove("none");
         success.classList.add("success-changed");
-        document.getElementById("success_msg").innerHTML = "Välkommen tillbaka Test";
+        document.getElementById("success_msg").innerHTML = "Välkommen tillbaka User";
         setBackground(success, "wrapper-success");
     } else {
         var sec = 0;
