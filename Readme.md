@@ -2,8 +2,9 @@
 
 [Demo](https://argunho.github.io/Exircise-LoginPage/)
 
-### Login: user
-### Password: password
+### Inloggningsuppgifter
+Login: user
+Password: password
 
 #### Testa med rätt och fel inloggningsupgifter
 
