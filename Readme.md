@@ -4,7 +4,6 @@
 
 ### Inloggningsuppgifter
 Login: user
-
 Password: password
 
 #### Testa med rätt och fel inloggningsupgifter
