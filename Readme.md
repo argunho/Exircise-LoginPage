@@ -1,4 +1,4 @@
-# Uppgift: Inlogningsida (js)
+# Uppgift: Inlogningsida (js, ccs, html)
 
 [Demo](https://argunho.github.io/Exircise-LoginPage/)
 
