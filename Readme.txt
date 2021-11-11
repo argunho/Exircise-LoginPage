@@ -1,4 +1,4 @@
-Uppgift: Inlogningsida
+#Uppgift: Inlogningsida
 
 01. Funktion setStart()        - Denna funktionen körs automatisk när sida öppnas och kontrollerar är besökare/användare inloggad eller inte. 
 			                         Om bes�kare/användare är inte inloggad visas en liten presentation och länk att starta annars öppnas fönster med hälsning till besökare/användare.
