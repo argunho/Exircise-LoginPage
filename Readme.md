@@ -9,6 +9,8 @@ Password: password
 
 #### Testa med rätt och fel inloggningsupgifter
 
+#### Funktioner
+
 01. Funktion setStart()        - Denna funktionen körs automatisk när sida öppnas och kontrollerar är besökare/användare inloggad eller inte. 
 			                         Om bes�kare/användare är inte inloggad visas en liten presentation och länk att starta annars öppnas fönster med hälsning till besökare/användare.
 02. Funktion checkAuth()       - Returnerar true eller false, om besökare/användare är inloggad return blir true annars false, denna funktionen används i funktionen setStart()
