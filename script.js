@@ -51,7 +51,7 @@ function getStart() {
         setBackground(login, "wrapper-login");
         setTimeout(function() {
             welcome.classList.remove("none")
-        }, 100)
+        }, 500)
         setTimeout(function() {
             wrapper.classList.add("wrapper-scale");
         }, 1000)
